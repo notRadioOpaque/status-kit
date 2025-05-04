@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${abel.className}`} lang="en">
-      <body className="antialiased">
+    <html lang="en">
+      <body className={`${abel.className} antialiased`}>
         <Providers>{children}</Providers>
       </body>
     </html>

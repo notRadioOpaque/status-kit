@@ -2,9 +2,9 @@ import prettierPlugin from "eslint-plugin-prettier";
 import tsParser from "@typescript-eslint/parser";
 import unusedImports from "eslint-plugin-unused-imports";
 import tsESLintPlugin from "@typescript-eslint/eslint-plugin";
-import { FlatCompat } from "@eslint/eslintrc";
+import {FlatCompat} from "@eslint/eslintrc";
 
-const compat = new FlatCompat({ recommendedConfig: {} });
+const compat = new FlatCompat({recommendedConfig: {}});
 
 // Merge your configurations:
 const eslintConfig = [
@@ -41,13 +41,13 @@ const eslintConfig = [
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        ecmaFeatures: { jsx: true },
+        ecmaFeatures: {jsx: true},
         ecmaVersion: 12,
         sourceType: "module",
       },
     },
     settings: {
-      react: { version: "detect" },
+      react: {version: "detect"},
     },
     plugins: {
       "unused-imports": unusedImports,

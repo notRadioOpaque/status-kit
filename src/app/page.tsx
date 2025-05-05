@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import FAQS from "@/components/faqs";
 import {Tag} from "@/components/tag";
 import CommandGuide from "@/components/command-guide";
+import SearchBar from "@/components/search-bar";
 
 export default function Home() {
   return (
@@ -39,8 +40,8 @@ export default function Home() {
           used.
         </p>
 
-        <div className="flex h-24 w-full items-center justify-center border">
-          Search bar goes here
+        <div className="flex h-24 w-[60%] items-center justify-center">
+          <SearchBar />
         </div>
 
         <CommandGuide />

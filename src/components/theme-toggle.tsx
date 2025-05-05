@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label="Toggle Theme"
-      className={`dark:bg-primary-bg dark:text-primary-color group: cursor-pointer rounded-full border border-zinc-200 bg-zinc-100 p-2 text-zinc-500 transition-transform duration-300 dark:border-zinc-900 dark:bg-[#3a3a3a] ${
+      className={`dark:bg-primary-bg dark:text-primary-color group: cursor-pointer rounded-full border border-zinc-200 bg-zinc-100 p-2 text-zinc-500 transition-transform duration-300 dark:border-zinc-900 dark:bg-[#3a3a3a] dark:text-white ${
         activeTheme === "light" ? "-rotate-180" : "rotate-0"
       }`}
       onClick={toggleTheme}

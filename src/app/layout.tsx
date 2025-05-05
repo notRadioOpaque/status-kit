@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${abel.className} antialiased`}>
+      <body className={`${abel.className}`}>
         <Providers>{children}</Providers>
       </body>
     </html>

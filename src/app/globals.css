@@ -6,9 +6,16 @@
 
 @layer utilities {
   .bg-noise {
-    background-image: url("/bg_noise.png"); /* use public path, no ../ */
+    background-image: url("/bg_noise.png");
     background-size: 200px 200px;
     background-position: 0 0;
+  }
+
+  .bg-radial {
+    background-image: url("/plus.svg");
+    background-size: 200px 200px;
+    background-position: 50% 15px;
+    background-repeat: no-repeat;
   }
 }
 

@@ -6,10 +6,15 @@ import {Icon} from "@iconify/react";
 
 import EmptySearch from "./empty-search";
 import ResultPanel from "./result-panel";
+import InitialSearch from "./initial-search";
+import LoadingSearch from "./loading-search";
 
 const SearchBar = () => {
   const [active, setActive] = useState(false);
   const [searchInput, setSearchInput] = useState("");
+  const [loading, setLoading] = useState(true);
+
+  const result: any = [];
 
   // Toggle with Cmd+K or Ctrl+K
   useEffect(() => {
@@ -77,12 +82,18 @@ const SearchBar = () => {
                 />
               </div>
 
-              <ResultPanel />
-
-              <EmptySearch
-                searchInput={searchInput}
-                onClearSearchInput={() => setSearchInput("")}
-              />
+              {!searchInput ? (
+                <InitialSearch />
+              ) : loading ? (
+                <LoadingSearch />
+              ) : result && result.length > 0 ? (
+                <ResultPanel />
+              ) : (
+                <EmptySearch
+                  searchInput={searchInput}
+                  onClearSearchInput={() => setSearchInput("")}
+                />
+              )}
             </motion.div>
           </>
         )}

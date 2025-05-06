@@ -8,7 +8,7 @@ const EmptySearch = ({
   onClearSearchInput: () => void;
 }) => {
   return (
-    <div className="mt-6 flex flex-col items-center gap-4 rounded-2xl bg-[#262628] bg-radial py-10 shadow-2xl">
+    <div className="mt-6 flex h-[280px] flex-col items-center gap-4 rounded-2xl bg-[#262628] bg-radial py-10 shadow-2xl">
       <Icon height={24} icon="iconamoon:search-light" />
 
       <h4 className="text-xl font-bold">No results found</h4>

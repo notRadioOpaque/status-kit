@@ -9,9 +9,9 @@ const InitialSearch = () => {
         </div>
         <p className="text-2xl font-medium text-white">Start typing to explore HTTP status codes</p>
         <p className="mt-2 text-gray-400">
-          Try things like <span className="text-blue-400">404</span>{" "}
-          <span className="text-blue-400">Redirect</span>, or{" "}
-          <span className="text-blue-400">Server error</span>
+          Try things like <span className="text-[#1e88e5]">404</span>,{" "}
+          <span className="text-[#1e88e5]">Redirect</span>, or{" "}
+          <span className="text-[#1e88e5]">Server error</span>
         </p>
       </div>
     </div>

@@ -3,18 +3,36 @@
 import {useEffect, useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import {Icon} from "@iconify/react";
+import Fuse from "fuse.js";
+
+import statusCodes from "../../data/statusCodes.json";
 
 import EmptySearch from "./empty-search";
 import ResultPanel from "./result-panel";
 import InitialSearch from "./initial-search";
-import LoadingSearch from "./loading-search";
+// import LoadingSearch from "./loading-search";
 
 const SearchBar = () => {
   const [active, setActive] = useState(false);
   const [searchInput, setSearchInput] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [results, setResults] = useState<any[]>([]);
 
-  const result: any = [];
+  const fuse = new Fuse(statusCodes, {
+    keys: ["code", "phrase"],
+    threshold: 0.3,
+  });
+
+  useEffect(() => {
+    if (searchInput.trim() === "") {
+      setResults([]);
+
+      return;
+    }
+
+    const found = fuse.search(searchInput).map((r) => r.item);
+
+    setResults(found);
+  }, [searchInput]);
 
   // Toggle with Cmd+K or Ctrl+K
   useEffect(() => {
@@ -84,10 +102,10 @@ const SearchBar = () => {
 
               {!searchInput ? (
                 <InitialSearch />
-              ) : loading ? (
-                <LoadingSearch />
-              ) : result && result.length > 0 ? (
-                <ResultPanel />
+              ) : // ) : loading ? (
+              //   <LoadingSearch />
+              results && results.length > 0 ? (
+                <ResultPanel results={results} />
               ) : (
                 <EmptySearch
                   searchInput={searchInput}

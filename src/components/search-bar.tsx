@@ -10,6 +10,7 @@ import statusCodes from "../../data/statusCodes.json";
 import EmptySearch from "./empty-search";
 import ResultPanel from "./result-panel";
 import InitialSearch from "./initial-search";
+import SearchInput from "./search-input";
 // import LoadingSearch from "./loading-search";
 
 const SearchBar = () => {
@@ -56,13 +57,18 @@ const SearchBar = () => {
         className="w-full cursor-pointer"
         onClick={() => setActive(true)}
       >
-        <div className="flex items-center rounded-2xl border border-[#464646] bg-[#262628] p-4 shadow-xl">
-          <Icon height="32" icon="iconamoon:search-light" width="32" />
+        <div className="flex items-center rounded-2xl border border-gray-300 bg-white p-4 shadow-lg dark:border-[#464646] dark:bg-[#262628]">
+          <Icon
+            className="text-[#7d7d7d] dark:text-white"
+            height="32"
+            icon="iconamoon:search-light"
+            width="32"
+          />
           <input
-            className="mx-4 w-full border-l border-l-[#464646] bg-transparent pl-4 text-2xl outline-0"
+            className="mx-4 w-full border-l border-l-[#7d7d7d] bg-transparent pl-4 text-2xl outline-0 dark:border-l-[#464646]"
             placeholder="Search HTTP codes..."
           />
-          <div className="ml-auto flex w-max items-center gap-0.5 rounded-lg bg-[#464646] px-2.5 py-1.5 font-bold">
+          <div className="ml-auto flex w-max items-center gap-0.5 rounded-lg bg-[#7d7d7d] px-2.5 py-1.5 font-bold text-white dark:bg-[#464646]">
             <span>⌘</span>
             <span>K</span>
           </div>
@@ -89,16 +95,7 @@ const SearchBar = () => {
               exit={{y: 50, opacity: 0}}
               initial={{y: 50, opacity: 0}}
             >
-              <div className="flex items-center gap-3 rounded-2xl bg-[#262628] p-6 text-2xl text-white">
-                <Icon height={24} icon="iconamoon:search-light" />
-                <input
-                  className="w-full bg-transparent text-lg outline-none"
-                  placeholder="Type a status code..."
-                  type="text"
-                  value={searchInput}
-                  onInput={(e) => setSearchInput(e.currentTarget.value)}
-                />
-              </div>
+              <SearchInput action={setSearchInput} searchInput={searchInput} />
 
               {!searchInput ? (
                 <InitialSearch />

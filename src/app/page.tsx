@@ -2,7 +2,7 @@ import {Icon} from "@iconify/react";
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import FAQS from "@/components/faqs";
+// import FAQS from "@/components/faqs";
 import {Tag} from "@/components/tag";
 import CommandGuide from "@/components/command-guide";
 import SearchBar from "@/components/search-bar";

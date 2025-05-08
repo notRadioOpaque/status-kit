@@ -14,7 +14,7 @@ function SearchInput({searchInput, action}: Props) {
   }, []);
 
   return (
-    <div className="flex items-center gap-3 rounded-2xl bg-[#262628] p-6 text-2xl text-white">
+    <div className="flex items-center gap-3 rounded-2xl bg-white p-6 text-2xl dark:bg-[#262628] dark:text-white">
       <Icon height={24} icon="iconamoon:search-light" />
       <input
         ref={inputRef}

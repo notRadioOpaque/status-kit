@@ -82,7 +82,7 @@ const SearchBar = () => {
             {/* Background Overlay */}
             <motion.div
               animate={{opacity: 1}}
-              className="fixed inset-0 z-40 bg-black/70 backdrop-blur-xl"
+              className="fixed inset-0 z-40 bg-gray-300/10 backdrop-blur-lg dark:bg-black/70"
               exit={{opacity: 0}}
               initial={{opacity: 0}}
               onClick={() => setActive(false)}
@@ -91,7 +91,7 @@ const SearchBar = () => {
             {/* Search Popup */}
             <motion.div
               animate={{y: 0, opacity: 1}}
-              className="fixed top-[20%] left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 rounded-xl shadow-2xl"
+              className="fixed top-[20%] left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 rounded-xl bg-transparent"
               exit={{y: 50, opacity: 0}}
               initial={{y: 50, opacity: 0}}
             >

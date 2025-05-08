@@ -47,7 +47,7 @@ export default function Home() {
         <CommandGuide />
       </main>
 
-      <FAQS />
+      {/* <FAQS /> */}
       <Footer />
     </div>
   );

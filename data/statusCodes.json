@@ -403,7 +403,7 @@
     "phrase": "HTTP Version Not Supported",
     "short-description": "The HTTP version used in the request is not supported by the server.",
     "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-505-http-version-not-supported"
+     "url":"https://www.rfc-editor.org/rfc/rfc2068#section-10.5.6"
   },
   {
     "code": 506,

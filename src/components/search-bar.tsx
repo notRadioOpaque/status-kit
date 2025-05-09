@@ -102,7 +102,7 @@ const SearchBar = () => {
               ) : // ) : loading ? (
               //   <LoadingSearch />
               results && results.length > 0 ? (
-                <ResultPanel results={results} />
+                <ResultPanel results={results} onSelect={() => {}} />
               ) : (
                 <EmptySearch
                   searchInput={searchInput}

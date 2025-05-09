@@ -1,15 +1,60 @@
 import {Icon} from "@iconify/react";
+import {useEffect, useRef, useState} from "react";
 
-const ResultPanel = ({results}: {results: any[]}) => {
+const ResultPanel = ({results, onSelect}: {results: any[]; onSelect: (result: any) => void}) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  // Focus the container on mount
+  useEffect(() => {
+    containerRef.current?.focus();
+  }, [results]);
+
+  // Scroll selected item into view
+  useEffect(() => {
+    const currentItem = itemRefs.current[selectedIndex];
+
+    if (currentItem) {
+      currentItem.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  }, [selectedIndex]);
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "ArrowDown") {
+      setSelectedIndex((prev) => (prev + 1 < results.length ? prev + 1 : prev));
+    } else if (e.key === "ArrowUp") {
+      setSelectedIndex((prev) => (prev - 1 >= 0 ? prev - 1 : prev));
+    } else if (e.key === "Enter") {
+      onSelect(results[selectedIndex]);
+    }
+  };
+
   return (
-    <div className="mt-6 flex flex-col gap-4 rounded-2xl bg-white pt-4 dark:bg-[#262628]">
-      {/* Scrollable inner container */}
-      <div className="mx-6 my-4 max-h-[300px] overflow-y-auto">
+    <div
+      ref={containerRef}
+      className="mt-6 flex flex-col gap-4 rounded-2xl bg-white pt-4 outline-none dark:bg-[#262628]"
+      role="button"
+      tabIndex={0}
+      onKeyDown={handleKeyDown}
+    >
+      <div className="mx-6 my-4 max-h-[400px] overflow-y-auto">
         <div className="flex flex-col gap-4">
-          {results.map((result) => (
+          {results.map((result, index) => (
             <button
               key={result.code}
-              className="flex cursor-pointer items-center gap-3 rounded-lg border-2 border-transparent bg-zinc-200 p-4 transition-all ease-in-out hover:border-zinc-400 dark:bg-[#333337] dark:hover:border-[#464646]"
+              ref={(el) => {
+                itemRefs.current[index] = el;
+              }}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border-2 p-4 transition-all ease-in-out ${
+                index === selectedIndex
+                  ? "border-zinc-400 bg-zinc-300 dark:border-[#7a7a7a] dark:bg-[#3f3f41]"
+                  : "border-transparent bg-zinc-200 hover:border-zinc-400 dark:bg-[#333337] dark:hover:border-[#464646]"
+              }`}
+              onClick={() => onSelect(result)}
             >
               <p className="font-bold text-[#1e88e5]">{result.code}</p>
               <span className="h-0 w-4 border-y border-y-[#1e88e5]" />
@@ -19,7 +64,6 @@ const ResultPanel = ({results}: {results: any[]}) => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="flex items-center justify-end gap-4 border-t border-t-zinc-200 px-6 py-4 dark:border-t-[#464646]">
         <div className="flex items-center gap-2">
           <div className="flex gap-1">
@@ -32,13 +76,10 @@ const ResultPanel = ({results}: {results: any[]}) => {
           </div>
           <p className="text-sm">to navigate</p>
         </div>
-
         <div className="flex items-center gap-2">
-          <div className="flex gap-1">
-            <span className="rounded bg-zinc-300 p-0.5 dark:bg-[#464646]">
-              <Icon className="text-white" height="14" icon="mi:enter" width="14" />
-            </span>
-          </div>
+          <span className="rounded bg-zinc-300 p-0.5 dark:bg-[#464646]">
+            <Icon className="text-white" height="14" icon="mi:enter" width="14" />
+          </span>
           <p className="text-sm">to select</p>
         </div>
       </div>

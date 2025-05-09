@@ -171,7 +171,7 @@
     "code": 405,
     "phrase": "Method Not Allowed",
     "description": "The request method is known by the server but is not supported by the target resource.",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-405-method-not-allowed"
+    //  "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-405-method-not-allowed"
   },
   {
     "code": 406,
@@ -219,7 +219,7 @@
     "code": 413,
     "phrase": "Payload Too Large",
     "description": "Request entity is larger than limits defined by server.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-413-payload-too-large"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-413-payload-too-large"
   },
   {
     "code": 414,
@@ -249,67 +249,67 @@
     "code": 418,
     "phrase": "I'm a teapot",
     "description": "Any attempt to brew coffee with a teapot should result in this error.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc2324.html#section-2.3.2"
   },
   {
     "code": 421,
     "phrase": "Misdirected Request",
     "description": "The request was directed at a server that is not able to produce a response.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-misdirected-request"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-421-misdirected-request"
   },
   {
     "code": 422,
     "phrase": "Unprocessable Content",
     "description": "The request was well-formed but was unable to be followed due to semantic errors.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-unprocessable-content"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-422-unprocessable-content"
   },
   {
     "code": 423,
     "phrase": "Locked",
     "description": "The resource that is being accessed is locked.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-locked"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-423-locked"
   },
   {
     "code": 424,
     "phrase": "Failed Dependency",
     "description": "The request failed due to failure of a previous request.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-failed-dependency"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-424-failed-dependency"
   },
   {
     "code": 425,
     "phrase": "Too Early",
     "description": "Indicates that the server is unwilling to risk processing a request that might be replayed.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-too-early"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-425-too-early"
   },
   {
     "code": 426,
     "phrase": "Upgrade Required",
     "description": "The client should switch to a different protocol.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-upgrade-required"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-426-upgrade-required"
   },
   {
     "code": 428,
     "phrase": "Precondition Required",
     "description": "The origin server requires the request to be conditional.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-precondition-required"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-428-precondition-required"
   },
   {
     "code": 429,
     "phrase": "Too Many Requests",
     "description": "The user has sent too many requests in a given amount of time.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-too-many-requests"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-429-too-many-requests"
   },
   {
     "code": 431,
     "phrase": "Request Header Fields Too Large",
     "description": "The server is unwilling to process the request because its header fields are too large.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-request-header-fields-too-large"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-431-request-header-fields-too-large"
   },
   {
     "code": 451,
     "phrase": "Unavailable For Legal Reasons",
     "description": "The user-agent requested a resource that cannot legally be provided.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-unavailable-for-legal-reasons"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-451-unavailable-for-legal-reasons"
   },
   {
     "code": 500,

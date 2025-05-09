@@ -10,22 +10,6 @@ Status Kit is an interactive web application designed to make learning HTTP stat
 - **Search Functionality**: Quickly find specific status codes or categories
 - **Educational Content**: Understand the meaning and proper usage of each status code
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
-
 ## Technology Stack
 
 - [Next.js](https://nextjs.org) - React framework for production

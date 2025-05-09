@@ -171,7 +171,7 @@
     "code": 405,
     "phrase": "Method Not Allowed",
     "description": "The request method is known by the server but is not supported by the target resource.",
-    //  "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-405-method-not-allowed"
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-405-method-not-allowed"
   },
   {
     "code": 406,
@@ -219,7 +219,7 @@
     "code": 413,
     "phrase": "Payload Too Large",
     "description": "Request entity is larger than limits defined by server.",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-413-payload-too-large"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-413-content-too-large"
   },
   {
     "code": 414,
@@ -315,25 +315,25 @@
     "code": 500,
     "phrase": "Internal Server Error",
     "description": "The server has encountered a situation it doesn't know how to handle.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-internal-server-error"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-500-internal-server-error"
   },
   {
     "code": 501,
     "phrase": "Not Implemented",
     "description": "The request method is not supported by the server and cannot be handled.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-not-implemented"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-501-not-implemented"
   },
   {
     "code": 502,
     "phrase": "Bad Gateway",
     "description": "The server, while acting as a gateway, got an invalid response.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-bad-gateway"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-502-bad-gateway"
   },
   {
     "code": 503,
     "phrase": "Service Unavailable",
     "description": "The server is not ready to handle the request.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-service-unavailable"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-503-service-unavailable"
   },
   {
     "code": 504,
@@ -345,36 +345,36 @@
     "code": 505,
     "phrase": "HTTP Version Not Supported",
     "description": "The HTTP version used in the request is not supported by the server.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-http-version-not-supported"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-505-http-version-not-supported"
   },
   {
     "code": 506,
     "phrase": "Variant Also Negotiates",
     "description": "Transparent content negotiation for the request results in a circular reference.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-variant-also-negotiates"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-506-variant-also-negotiates"
   },
   {
     "code": 507,
     "phrase": "Insufficient Storage",
     "description": "The server is unable to store the representation needed to complete the request.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-insufficient-storage"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-507-insufficient-storage"
   },
   {
     "code": 508,
     "phrase": "Loop Detected",
     "description": "The server detected an infinite loop while processing a request.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-loop-detected"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-508-loop-detected"
   },
   {
     "code": 510,
     "phrase": "Not Extended",
     "description": "Further extensions to the request are required for the server to fulfill it.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-not-extended"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-509-not-extended"
   },
   {
     "code": 511,
     "phrase": "Network Authentication Required",
     "description": "The client needs to authenticate to gain network access.",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-network-authentication-required"
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-511-network-authentication-required"
   }
 ]

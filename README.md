@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Status Kit - HTTP Status Code Learning Platform
+
+Status Kit is an interactive web application designed to make learning HTTP status codes easier and more accessible. Whether you're a developer, student, or just curious about web protocols, Status Kit provides a comprehensive and user-friendly way to understand HTTP status codes.
+
+## Features
+
+- **Interactive Learning**: Learn about HTTP status codes through an engaging and intuitive interface
+- **Comprehensive Data**: Access detailed information about all standard HTTP status codes
+- **Quick Reference**: Browse through a complete list of status codes for easy lookup
+- **Search Functionality**: Quickly find specific status codes or categories
+- **Educational Content**: Understand the meaning and proper usage of each status code
 
 ## Getting Started
 
@@ -14,23 +24,18 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js](https://nextjs.org) - React framework for production
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Whether it's adding new features, improving documentation, or fixing bugs, we appreciate your help in making Status Kit better.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the MIT License.

@@ -9,79 +9,79 @@
     "code": 101,
     "phrase": "Switching Protocols",
     "description": "The requester has asked the server to switch protocols.",
-    "url":""
+    "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-101-switching-protocols"
   },
   {
     "code": 102,
     "phrase": "Processing",
     "description": "WebDAV; RFC 2518. The server has received and is processing the request, but no response is available yet.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-102-processing"
   },
   {
     "code": 103,
     "phrase": "Early Hints",
     "description": "Used to return some response headers before final HTTP message.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-103-early-hints"
   },
   {
     "code": 200,
     "phrase": "OK",
     "description": "The request succeeded.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-200-ok"
   },
   {
     "code": 201,
     "phrase": "Created",
     "description": "The request succeeded, and a new resource was created.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-201-created"
   },
   {
     "code": 202,
     "phrase": "Accepted",
     "description": "The request has been received but not yet acted upon.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-202-accepted"
   },
   {
     "code": 203,
     "phrase": "Non-Authoritative Information",
     "description": "Returned meta-information is not from the origin server.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-203-non-authoritative-infor"
   },
   {
     "code": 204,
     "phrase": "No Content",
     "description": "There is no content to send for this request, but the headers may be useful.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-204-no-content"
   },
   {
     "code": 205,
     "phrase": "Reset Content",
     "description": "Tells the user-agent to reset the document which sent this request.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-205-reset-content"
   },
   {
     "code": 206,
     "phrase": "Partial Content",
     "description": "Used when a range header is sent from the client to request only part of a resource.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-206-partial-content"
   },
   {
     "code": 207,
     "phrase": "Multi-Status",
     "description": "WebDAV; conveys information about multiple resources.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-207-multi-status"
   },
   {
     "code": 208,
     "phrase": "Already Reported",
     "description": "WebDAV; members of a DAV binding have already been enumerated.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-208-already-reported"
   },
   {
     "code": 226,
     "phrase": "IM Used",
     "description": "The server has fulfilled a request for the resource.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-226-im-used"
   },
   {
     "code": 300,

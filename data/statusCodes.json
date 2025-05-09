@@ -18,14 +18,14 @@
     "phrase": "Processing",
     "short-description": "WebDAV; RFC 2518. The server has received and is processing the request, but no response is available yet.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-102-processing"
+     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.1"
   },
   {
     "code": 103,
     "phrase": "Early Hints",
     "short-description": "Used to return some response headers before final HTTP message.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-103-early-hints"
+    //  "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-103-early-hints"
   },
   {
     "code": 200,
@@ -81,21 +81,21 @@
     "phrase": "Multi-Status",
     "short-description": "WebDAV; conveys information about multiple resources.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-207-multi-status"
+     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.2"
   },
   {
     "code": 208,
     "phrase": "Already Reported",
     "short-description": "WebDAV; members of a DAV binding have already been enumerated.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-208-already-reported"
+    //  "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-208-already-reported"
   },
   {
     "code": 226,
     "phrase": "IM Used",
     "short-description": "The server has fulfilled a request for the resource.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-226-im-used"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-226-im-used"
   },
   {
     "code": 300,
@@ -109,21 +109,21 @@
     "phrase": "Moved Permanently",
     "short-description": "This response code means that URI of requested resource has been changed permanently.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices"
+     "url":"https://www.rfc-editor.org/rfc/rfc2068#section-10.3.2"
   },
   {
     "code": 302,
     "phrase": "Found",
     "short-description": "Tells the client to look at (browse to) another URL.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices"
+     "url":" https://www.rfc-editor.org/rfc/rfc2068#section-10.3.3"
   },
   {
     "code": 303,
     "phrase": "See Other",
     "short-description": "The response can be found under another URI using a GET method.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-303-see-other"
+     "url":" https://www.rfc-editor.org/rfc/rfc2068#section-10.3.4"
   },
   {
     "code": 304,
@@ -312,21 +312,21 @@
     "phrase": "Locked",
     "short-description": "The resource that is being accessed is locked.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-423-locked"
+     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.4"
   },
   {
     "code": 424,
     "phrase": "Failed Dependency",
     "short-description": "The request failed due to failure of a previous request.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-424-failed-dependency"
+     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.5"
   },
   {
     "code": 425,
     "phrase": "Too Early",
     "short-description": "Indicates that the server is unwilling to risk processing a request that might be replayed.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-425-too-early"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-425-too-early"
   },
   {
     "code": 426,
@@ -340,28 +340,28 @@
     "phrase": "Precondition Required",
     "short-description": "The origin server requires the request to be conditional.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-428-precondition-required"
+     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-3"
   },
   {
     "code": 429,
     "phrase": "Too Many Requests",
     "short-description": "The user has sent too many requests in a given amount of time.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-429-too-many-requests"
+     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-4"
   },
   {
     "code": 431,
     "phrase": "Request Header Fields Too Large",
     "short-description": "The server is unwilling to process the request because its header fields are too large.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-431-request-header-fields-too-large"
+     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-5"
   },
   {
     "code": 451,
     "phrase": "Unavailable For Legal Reasons",
     "short-description": "The user-agent requested a resource that cannot legally be provided.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-451-unavailable-for-legal-reasons"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-451-unavailable-for-legal-reasons"
   },
   {
     "code": 500,
@@ -403,41 +403,41 @@
     "phrase": "HTTP Version Not Supported",
     "short-description": "The HTTP version used in the request is not supported by the server.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-505-http-version-not-supported"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-505-http-version-not-supported"
   },
   {
     "code": 506,
     "phrase": "Variant Also Negotiates",
     "short-description": "Transparent content negotiation for the request results in a circular reference.",
      "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-506-variant-also-negotiates"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-506-variant-also-negotiates"
   },
   {
     "code": 507,
     "phrase": "Insufficient Storage",
     "short-description": "The server is unable to store the representation needed to complete the request.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-507-insufficient-storage"
+     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.6"
   },
   {
     "code": 508,
     "phrase": "Loop Detected",
     "short-description": "The server detected an infinite loop while processing a request.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-508-loop-detected"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-508-loop-detected"
   },
   {
     "code": 510,
     "phrase": "Not Extended",
     "short-description": "Further extensions to the request are required for the server to fulfill it.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-509-not-extended"
+    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-509-not-extended"
   },
   {
     "code": 511,
     "phrase": "Network Authentication Required",
     "short-description": "The client needs to authenticate to gain network access.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-511-network-authentication-required"
+     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-6"
   }
 ]

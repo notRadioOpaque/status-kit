@@ -87,139 +87,139 @@
     "code": 300,
     "phrase": "Multiple Choices",
     "description": "The request has more than one possible response.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices"
   },
   {
     "code": 301,
     "phrase": "Moved Permanently",
     "description": "This response code means that URI of requested resource has been changed permanently.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices"
   },
   {
     "code": 302,
     "phrase": "Found",
     "description": "Tells the client to look at (browse to) another URL.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices"
   },
   {
     "code": 303,
     "phrase": "See Other",
     "description": "The response can be found under another URI using a GET method.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-303-see-other"
   },
   {
     "code": 304,
     "phrase": "Not Modified",
     "description": "Indicates that the resource has not been modified since the last request.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-304-not-modified"
   },
   {
     "code": 305,
     "phrase": "Use Proxy",
     "description": "Deprecated. Was defined in a previous version of the HTTP specification.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-305-use-proxy"
   },
   {
     "code": 306,
     "phrase": "Switch Proxy",
     "description": "No longer used. Reserved for future use.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-306-unused"
   },
   {
     "code": 307,
     "phrase": "Temporary Redirect",
     "description": "In this case, the request should be repeated with another URI.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-307-temporary-redirect"
   },
   {
     "code": 308,
     "phrase": "Permanent Redirect",
     "description": "The resource is now permanently located at another URI.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-308-permanent-redirect"
   },
   {
     "code": 400,
     "phrase": "Bad Request",
     "description": "The server could not understand the request due to invalid syntax.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-400-bad-request"
   },
   {
     "code": 401,
     "phrase": "Unauthorized",
     "description": "The client must authenticate itself to get the requested response.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-401-unauthorized"
   },
   {
     "code": 402,
     "phrase": "Payment Required",
     "description": "This response code is reserved for future use.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-402-payment-required"
   },
   {
     "code": 403,
     "phrase": "Forbidden",
     "description": "The client does not have access rights to the content.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-403-forbidden"
   },
   {
     "code": 404,
     "phrase": "Not Found",
     "description": "The server can not find requested resource.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-404-not-found"
   },
   {
     "code": 405,
     "phrase": "Method Not Allowed",
     "description": "The request method is known by the server but is not supported by the target resource.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-405-method-not-allowed"
   },
   {
     "code": 406,
     "phrase": "Not Acceptable",
     "description": "The server cannot produce a response matching the list of acceptable values.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-406-not-acceptable"
   },
   {
     "code": 407,
     "phrase": "Proxy Authentication Required",
     "description": "The client must first authenticate itself with the proxy.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-407-proxy-authentication-re"
   },
   {
     "code": 408,
     "phrase": "Request Timeout",
     "description": "The server would like to shut down this unused connection.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-408-request-timeout"
   },
   {
     "code": 409,
     "phrase": "Conflict",
     "description": "The request conflicts with the current state of the server.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-409-conflict"
   },
   {
     "code": 410,
     "phrase": "Gone",
     "description": "The content has been permanently deleted from server.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-410-gone"
   },
   {
     "code": 411,
     "phrase": "Length Required",
     "description": "The server refuses to accept the request without a defined Content-Length.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-411-length-required"
   },
   {
     "code": 412,
     "phrase": "Precondition Failed",
     "description": "Access condition failed.",
-     "url":""
+     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-412-precondition-failed"
   },
   {
     "code": 413,
     "phrase": "Payload Too Large",
     "description": "Request entity is larger than limits defined by server.",
-     "url":""
+     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-413-payload-too-large"
   },
   {
     "code": 414,
@@ -339,7 +339,7 @@
     "code": 504,
     "phrase": "Gateway Timeout",
     "description": "The server is acting as a gateway and cannot get a response in time.",
-     "url":""
+     "url":"https://www.ietf.org/rfc/rfc9110.html#name-504-gateway-timeout"
   },
   {
     "code": 505,

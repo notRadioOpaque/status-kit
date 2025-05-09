@@ -1,15 +1,16 @@
 import {Icon} from "@iconify/react";
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef} from "react";
 
-const ResultPanel = ({results, onSelect}: {results: any[]; onSelect: (result: any) => void}) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+const ResultPanel = ({
+  results,
+  onSelect,
+  selectedIndex,
+}: {
+  results: any[];
+  onSelect: (result: any) => void;
+  selectedIndex: number;
+}) => {
   const itemRefs = useRef<(HTMLButtonElement | null)[]>([]);
-
-  // Focus the container on mount
-  useEffect(() => {
-    containerRef.current?.focus();
-  }, [results]);
 
   // Scroll selected item into view
   useEffect(() => {
@@ -23,24 +24,8 @@ const ResultPanel = ({results, onSelect}: {results: any[]; onSelect: (result: an
     }
   }, [selectedIndex]);
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === "ArrowDown") {
-      setSelectedIndex((prev) => (prev + 1 < results.length ? prev + 1 : prev));
-    } else if (e.key === "ArrowUp") {
-      setSelectedIndex((prev) => (prev - 1 >= 0 ? prev - 1 : prev));
-    } else if (e.key === "Enter") {
-      onSelect(results[selectedIndex]);
-    }
-  };
-
   return (
-    <div
-      ref={containerRef}
-      className="mt-6 flex flex-col gap-4 rounded-2xl bg-white pt-4 outline-none dark:bg-[#262628]"
-      role="button"
-      tabIndex={0}
-      onKeyDown={handleKeyDown}
-    >
+    <div className="mt-6 flex flex-col gap-4 rounded-2xl bg-white pt-4 outline-none dark:bg-[#262628]">
       <div className="mx-6 my-4 max-h-[400px] overflow-y-auto">
         <div className="flex flex-col gap-4">
           {results.map((result, index) => (

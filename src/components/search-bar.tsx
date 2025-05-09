@@ -15,6 +15,7 @@ import SearchInput from "./search-input";
 
 const SearchBar = () => {
   const [active, setActive] = useState(false);
+  const [selectedIndex, setSelectedIndex] = useState(0);
   const [searchInput, setSearchInput] = useState("");
   const [results, setResults] = useState<any[]>([]);
 
@@ -48,6 +49,34 @@ const SearchBar = () => {
 
     return () => window.removeEventListener("keydown", handler);
   }, []);
+
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (!active) return;
+
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev + 1 < results.length ? prev + 1 : prev));
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        setSelectedIndex((prev) => (prev - 1 >= 0 ? prev - 1 : prev));
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        if (results[selectedIndex]) {
+          // Do something with results[selectedIndex]
+          console.log("Selected:", results[selectedIndex]);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handler);
+
+    return () => window.removeEventListener("keydown", handler);
+  }, [active, results, selectedIndex]);
+
+  useEffect(() => {
+    setSelectedIndex(0);
+  }, [results]);
 
   return (
     <>
@@ -102,7 +131,7 @@ const SearchBar = () => {
               ) : // ) : loading ? (
               //   <LoadingSearch />
               results && results.length > 0 ? (
-                <ResultPanel results={results} onSelect={() => {}} />
+                <ResultPanel results={results} selectedIndex={selectedIndex} onSelect={() => {}} />
               ) : (
                 <EmptySearch
                   searchInput={searchInput}

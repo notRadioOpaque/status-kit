@@ -2,316 +2,379 @@
   {
     "code": 100,
     "phrase": "Continue",
-    "description": "The server has received the request headers, and the client should proceed to send the request body."
+    "description": "The server has received the request headers, and the client should proceed to send the request body.",
+    "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-100-continue"
   },
   {
     "code": 101,
     "phrase": "Switching Protocols",
-    "description": "The requester has asked the server to switch protocols."
+    "description": "The requester has asked the server to switch protocols.",
+    "url":""
   },
   {
     "code": 102,
     "phrase": "Processing",
-    "description": "WebDAV; RFC 2518. The server has received and is processing the request, but no response is available yet."
+    "description": "WebDAV; RFC 2518. The server has received and is processing the request, but no response is available yet.",
+     "url":""
   },
   {
     "code": 103,
     "phrase": "Early Hints",
-    "description": "Used to return some response headers before final HTTP message."
+    "description": "Used to return some response headers before final HTTP message.",
+     "url":""
   },
   {
     "code": 200,
     "phrase": "OK",
-    "description": "The request succeeded."
+    "description": "The request succeeded.",
+     "url":""
   },
   {
     "code": 201,
     "phrase": "Created",
-    "description": "The request succeeded, and a new resource was created."
+    "description": "The request succeeded, and a new resource was created.",
+     "url":""
   },
   {
     "code": 202,
     "phrase": "Accepted",
-    "description": "The request has been received but not yet acted upon."
+    "description": "The request has been received but not yet acted upon.",
+     "url":""
   },
   {
     "code": 203,
     "phrase": "Non-Authoritative Information",
-    "description": "Returned meta-information is not from the origin server."
+    "description": "Returned meta-information is not from the origin server.",
+     "url":""
   },
   {
     "code": 204,
     "phrase": "No Content",
-    "description": "There is no content to send for this request, but the headers may be useful."
+    "description": "There is no content to send for this request, but the headers may be useful.",
+     "url":""
   },
   {
     "code": 205,
     "phrase": "Reset Content",
-    "description": "Tells the user-agent to reset the document which sent this request."
+    "description": "Tells the user-agent to reset the document which sent this request.",
+     "url":""
   },
   {
     "code": 206,
     "phrase": "Partial Content",
-    "description": "Used when a range header is sent from the client to request only part of a resource."
+    "description": "Used when a range header is sent from the client to request only part of a resource.",
+     "url":""
   },
   {
     "code": 207,
     "phrase": "Multi-Status",
-    "description": "WebDAV; conveys information about multiple resources."
+    "description": "WebDAV; conveys information about multiple resources.",
+     "url":""
   },
   {
     "code": 208,
     "phrase": "Already Reported",
-    "description": "WebDAV; members of a DAV binding have already been enumerated."
+    "description": "WebDAV; members of a DAV binding have already been enumerated.",
+     "url":""
   },
   {
     "code": 226,
     "phrase": "IM Used",
-    "description": "The server has fulfilled a request for the resource."
+    "description": "The server has fulfilled a request for the resource.",
+     "url":""
   },
   {
     "code": 300,
     "phrase": "Multiple Choices",
-    "description": "The request has more than one possible response."
+    "description": "The request has more than one possible response.",
+     "url":""
   },
   {
     "code": 301,
     "phrase": "Moved Permanently",
-    "description": "This response code means that URI of requested resource has been changed permanently."
+    "description": "This response code means that URI of requested resource has been changed permanently.",
+     "url":""
   },
   {
     "code": 302,
     "phrase": "Found",
-    "description": "Tells the client to look at (browse to) another URL."
+    "description": "Tells the client to look at (browse to) another URL.",
+     "url":""
   },
   {
     "code": 303,
     "phrase": "See Other",
-    "description": "The response can be found under another URI using a GET method."
+    "description": "The response can be found under another URI using a GET method.",
+     "url":""
   },
   {
     "code": 304,
     "phrase": "Not Modified",
-    "description": "Indicates that the resource has not been modified since the last request."
+    "description": "Indicates that the resource has not been modified since the last request.",
+     "url":""
   },
   {
     "code": 305,
     "phrase": "Use Proxy",
-    "description": "Deprecated. Was defined in a previous version of the HTTP specification."
+    "description": "Deprecated. Was defined in a previous version of the HTTP specification.",
+     "url":""
   },
   {
     "code": 306,
     "phrase": "Switch Proxy",
-    "description": "No longer used. Reserved for future use."
+    "description": "No longer used. Reserved for future use.",
+     "url":""
   },
   {
     "code": 307,
     "phrase": "Temporary Redirect",
-    "description": "In this case, the request should be repeated with another URI."
+    "description": "In this case, the request should be repeated with another URI.",
+     "url":""
   },
   {
     "code": 308,
     "phrase": "Permanent Redirect",
-    "description": "The resource is now permanently located at another URI."
+    "description": "The resource is now permanently located at another URI.",
+     "url":""
   },
   {
     "code": 400,
     "phrase": "Bad Request",
-    "description": "The server could not understand the request due to invalid syntax."
+    "description": "The server could not understand the request due to invalid syntax.",
+     "url":""
   },
   {
     "code": 401,
     "phrase": "Unauthorized",
-    "description": "The client must authenticate itself to get the requested response."
+    "description": "The client must authenticate itself to get the requested response.",
+     "url":""
   },
   {
     "code": 402,
     "phrase": "Payment Required",
-    "description": "This response code is reserved for future use."
+    "description": "This response code is reserved for future use.",
+     "url":""
   },
   {
     "code": 403,
     "phrase": "Forbidden",
-    "description": "The client does not have access rights to the content."
+    "description": "The client does not have access rights to the content.",
+     "url":""
   },
   {
     "code": 404,
     "phrase": "Not Found",
-    "description": "The server can not find requested resource."
+    "description": "The server can not find requested resource.",
+     "url":""
   },
   {
     "code": 405,
     "phrase": "Method Not Allowed",
-    "description": "The request method is known by the server but is not supported by the target resource."
+    "description": "The request method is known by the server but is not supported by the target resource.",
+     "url":""
   },
   {
     "code": 406,
     "phrase": "Not Acceptable",
-    "description": "The server cannot produce a response matching the list of acceptable values."
+    "description": "The server cannot produce a response matching the list of acceptable values.",
+     "url":""
   },
   {
     "code": 407,
     "phrase": "Proxy Authentication Required",
-    "description": "The client must first authenticate itself with the proxy."
+    "description": "The client must first authenticate itself with the proxy.",
+     "url":""
   },
   {
     "code": 408,
     "phrase": "Request Timeout",
-    "description": "The server would like to shut down this unused connection."
+    "description": "The server would like to shut down this unused connection.",
+     "url":""
   },
   {
     "code": 409,
     "phrase": "Conflict",
-    "description": "The request conflicts with the current state of the server."
+    "description": "The request conflicts with the current state of the server.",
+     "url":""
   },
   {
     "code": 410,
     "phrase": "Gone",
-    "description": "The content has been permanently deleted from server."
+    "description": "The content has been permanently deleted from server.",
+     "url":""
   },
   {
     "code": 411,
     "phrase": "Length Required",
-    "description": "The server refuses to accept the request without a defined Content-Length."
+    "description": "The server refuses to accept the request without a defined Content-Length.",
+     "url":""
   },
   {
     "code": 412,
     "phrase": "Precondition Failed",
-    "description": "Access condition failed."
+    "description": "Access condition failed.",
+     "url":""
   },
   {
     "code": 413,
     "phrase": "Payload Too Large",
-    "description": "Request entity is larger than limits defined by server."
+    "description": "Request entity is larger than limits defined by server.",
+     "url":""
   },
   {
     "code": 414,
     "phrase": "URI Too Long",
-    "description": "The URI requested by the client is longer than the server is willing to interpret."
+    "description": "The URI requested by the client is longer than the server is willing to interpret.",
+     "url":""
   },
   {
     "code": 415,
     "phrase": "Unsupported Media Type",
-    "description": "The media format of the requested data is not supported by the server."
+    "description": "The media format of the requested data is not supported by the server.",
+     "url":""
   },
   {
     "code": 416,
     "phrase": "Range Not Satisfiable",
-    "description": "The range specified by the Range header field in the request can't be fulfilled."
+    "description": "The range specified by the Range header field in the request can't be fulfilled.",
+     "url":""
   },
   {
     "code": 417,
     "phrase": "Expectation Failed",
-    "description": "Expectation indicated by the Expect request-header field cannot be met."
+    "description": "Expectation indicated by the Expect request-header field cannot be met.",
+     "url":""
   },
   {
     "code": 418,
     "phrase": "I'm a teapot",
-    "description": "Any attempt to brew coffee with a teapot should result in this error."
+    "description": "Any attempt to brew coffee with a teapot should result in this error.",
+     "url":""
   },
   {
     "code": 421,
     "phrase": "Misdirected Request",
-    "description": "The request was directed at a server that is not able to produce a response."
+    "description": "The request was directed at a server that is not able to produce a response.",
+     "url":""
   },
   {
     "code": 422,
     "phrase": "Unprocessable Content",
-    "description": "The request was well-formed but was unable to be followed due to semantic errors."
+    "description": "The request was well-formed but was unable to be followed due to semantic errors.",
+     "url":""
   },
   {
     "code": 423,
     "phrase": "Locked",
-    "description": "The resource that is being accessed is locked."
+    "description": "The resource that is being accessed is locked.",
+     "url":""
   },
   {
     "code": 424,
     "phrase": "Failed Dependency",
-    "description": "The request failed due to failure of a previous request."
+    "description": "The request failed due to failure of a previous request.",
+     "url":""
   },
   {
     "code": 425,
     "phrase": "Too Early",
-    "description": "Indicates that the server is unwilling to risk processing a request that might be replayed."
+    "description": "Indicates that the server is unwilling to risk processing a request that might be replayed.",
+     "url":""
   },
   {
     "code": 426,
     "phrase": "Upgrade Required",
-    "description": "The client should switch to a different protocol."
+    "description": "The client should switch to a different protocol.",
+     "url":""
   },
   {
     "code": 428,
     "phrase": "Precondition Required",
-    "description": "The origin server requires the request to be conditional."
+    "description": "The origin server requires the request to be conditional.",
+     "url":""
   },
   {
     "code": 429,
     "phrase": "Too Many Requests",
-    "description": "The user has sent too many requests in a given amount of time."
+    "description": "The user has sent too many requests in a given amount of time.",
+     "url":""
   },
   {
     "code": 431,
     "phrase": "Request Header Fields Too Large",
-    "description": "The server is unwilling to process the request because its header fields are too large."
+    "description": "The server is unwilling to process the request because its header fields are too large.",
+     "url":""
   },
   {
     "code": 451,
     "phrase": "Unavailable For Legal Reasons",
-    "description": "The user-agent requested a resource that cannot legally be provided."
+    "description": "The user-agent requested a resource that cannot legally be provided.",
+     "url":""
   },
   {
     "code": 500,
     "phrase": "Internal Server Error",
-    "description": "The server has encountered a situation it doesn't know how to handle."
+    "description": "The server has encountered a situation it doesn't know how to handle.",
+     "url":""
   },
   {
     "code": 501,
     "phrase": "Not Implemented",
-    "description": "The request method is not supported by the server and cannot be handled."
+    "description": "The request method is not supported by the server and cannot be handled.",
+     "url":""
   },
   {
     "code": 502,
     "phrase": "Bad Gateway",
-    "description": "The server, while acting as a gateway, got an invalid response."
+    "description": "The server, while acting as a gateway, got an invalid response.",
+     "url":""
   },
   {
     "code": 503,
     "phrase": "Service Unavailable",
-    "description": "The server is not ready to handle the request."
+    "description": "The server is not ready to handle the request.",
+     "url":""
   },
   {
     "code": 504,
     "phrase": "Gateway Timeout",
-    "description": "The server is acting as a gateway and cannot get a response in time."
+    "description": "The server is acting as a gateway and cannot get a response in time.",
+     "url":""
   },
   {
     "code": 505,
     "phrase": "HTTP Version Not Supported",
-    "description": "The HTTP version used in the request is not supported by the server."
+    "description": "The HTTP version used in the request is not supported by the server.",
+     "url":""
   },
   {
     "code": 506,
     "phrase": "Variant Also Negotiates",
-    "description": "Transparent content negotiation for the request results in a circular reference."
+    "description": "Transparent content negotiation for the request results in a circular reference.",
+     "url":""
   },
   {
     "code": 507,
     "phrase": "Insufficient Storage",
-    "description": "The server is unable to store the representation needed to complete the request."
+    "description": "The server is unable to store the representation needed to complete the request.",
+     "url":""
   },
   {
     "code": 508,
     "phrase": "Loop Detected",
-    "description": "The server detected an infinite loop while processing a request."
+    "description": "The server detected an infinite loop while processing a request.",
+     "url":""
   },
   {
     "code": 510,
     "phrase": "Not Extended",
-    "description": "Further extensions to the request are required for the server to fulfill it."
+    "description": "Further extensions to the request are required for the server to fulfill it.",
+     "url":""
   },
   {
     "code": 511,
     "phrase": "Network Authentication Required",
-    "description": "The client needs to authenticate to gain network access."
+    "description": "The client needs to authenticate to gain network access.",
+     "url":""
   }
 ]

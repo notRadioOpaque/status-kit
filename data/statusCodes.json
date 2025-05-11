@@ -426,21 +426,21 @@
     "code": 508,
     "phrase": "Loop Detected",
     "short-description": "The server detected an infinite loop while processing a request.",
-    "long-description":"",
+    "long-description":"The server detected an infinite loop while processing the request.",
     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/508"
   },
   {
     "code": 510,
     "phrase": "Not Extended",
     "short-description": "Further extensions to the request are required for the server to fulfill it.",
-    "long-description":"",
+    "long-description":"The client request declares an HTTP Extension that should be used to process the request, but the extension is not supported.",
     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/510"
   },
   {
     "code": 511,
     "phrase": "Network Authentication Required",
     "short-description": "The client needs to authenticate to gain network access.",
-    "long-description":"",
+    "long-description":"Indicates that the client needs to authenticate to gain network access.",
      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/511"
   }
 ]

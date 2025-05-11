@@ -3,441 +3,444 @@
     "code": 100,
     "phrase": "Continue",
     "short-description": "The server has received the request headers, and the client should proceed to send the request body.",
-    "long-description":"",
-    "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-100-continue"
+    "long-description":"This interim response indicates that the client should continue the request or ignore the response if the request is already finished.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/100 "
   },
   {
     "code": 101,
     "phrase": "Switching Protocols",
     "short-description": "The requester has asked the server to switch protocols.",
-    "long-description":"",
-    "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-101-switching-protocols"
+    "long-description":"This code is sent in response to an Upgrade request header from the client and indicates the protocol the server is switching to.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/101 "
   },
   {
     "code": 102,
     "phrase": "Processing",
     "short-description": "WebDAV; RFC 2518. The server has received and is processing the request, but no response is available yet.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.1"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/102 "
   },
   {
     "code": 103,
     "phrase": "Early Hints",
     "short-description": "Used to return some response headers before final HTTP message.",
     "long-description":"",
-    //  "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-103-early-hints"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/103"
   },
   {
     "code": 200,
     "phrase": "OK",
     "short-description": "The request succeeded.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-200-ok"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/200"
   },
   {
     "code": 201,
     "phrase": "Created",
     "short-description": "The request succeeded, and a new resource was created.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-201-created"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/201"
   },
   {
     "code": 202,
     "phrase": "Accepted",
     "short-description": "The request has been received but not yet acted upon.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-202-accepted"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/202"
   },
   {
     "code": 203,
     "phrase": "Non-Authoritative Information",
     "short-description": "Returned meta-information is not from the origin server.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-203-non-authoritative-infor"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/203 "
   },
   {
     "code": 204,
     "phrase": "No Content",
     "short-description": "There is no content to send for this request, but the headers may be useful.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-204-no-content"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/204 "
   },
   {
     "code": 205,
     "phrase": "Reset Content",
     "short-description": "Tells the user-agent to reset the document which sent this request.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-205-reset-content"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/205 "
   },
   {
     "code": 206,
     "phrase": "Partial Content",
     "short-description": "Used when a range header is sent from the client to request only part of a resource.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-206-partial-content"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/206 "
   },
   {
     "code": 207,
     "phrase": "Multi-Status",
     "short-description": "WebDAV; conveys information about multiple resources.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.2"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/207 "
   },
   {
     "code": 208,
     "phrase": "Already Reported",
     "short-description": "WebDAV; members of a DAV binding have already been enumerated.",
     "long-description":"",
-    //  "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-208-already-reported"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/208 "
   },
   {
     "code": 226,
     "phrase": "IM Used",
     "short-description": "The server has fulfilled a request for the resource.",
     "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-226-im-used"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/226 "
   },
   {
     "code": 300,
     "phrase": "Multiple Choices",
     "short-description": "The request has more than one possible response.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/300 "
   },
   {
     "code": 301,
     "phrase": "Moved Permanently",
     "short-description": "This response code means that URI of requested resource has been changed permanently.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2068#section-10.3.2"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/301 "
   },
   {
     "code": 302,
     "phrase": "Found",
     "short-description": "Tells the client to look at (browse to) another URL.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc2068#section-10.3.3"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/302 "
   },
   {
     "code": 303,
     "phrase": "See Other",
     "short-description": "The response can be found under another URI using a GET method.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc2068#section-10.3.4"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/303 "
   },
   {
     "code": 304,
     "phrase": "Not Modified",
     "short-description": "Indicates that the resource has not been modified since the last request.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-304-not-modified"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/304 "
   },
   {
     "code": 305,
     "phrase": "Use Proxy",
     "short-description": "Deprecated. Was defined in a previous version of the HTTP specification.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-305-use-proxy"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#305_use_proxy"
   },
+  
   {
     "code": 306,
     "phrase": "Switch Proxy",
     "short-description": "No longer used. Reserved for future use.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-306-unused"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#306_unused "
   },
   {
     "code": 307,
     "phrase": "Temporary Redirect",
     "short-description": "In this case, the request should be repeated with another URI.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-307-temporary-redirect"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/307 "
   },
   {
     "code": 308,
     "phrase": "Permanent Redirect",
     "short-description": "The resource is now permanently located at another URI.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-308-permanent-redirect"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/308"
   },
   {
     "code": 400,
     "phrase": "Bad Request",
     "short-description": "The server could not understand the request due to invalid syntax.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-400-bad-request"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/400"
   },
   {
     "code": 401,
     "phrase": "Unauthorized",
     "short-description": "The client must authenticate itself to get the requested response.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-401-unauthorized"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/401"
   },
   {
     "code": 402,
     "phrase": "Payment Required",
     "short-description": "This response code is reserved for future use.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-402-payment-required"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/402"
   },
   {
     "code": 403,
     "phrase": "Forbidden",
     "short-description": "The client does not have access rights to the content.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-403-forbidden"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/403"
   },
   {
     "code": 404,
     "phrase": "Not Found",
     "short-description": "The server can not find requested resource.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-404-not-found"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/404"
   },
   {
     "code": 405,
     "phrase": "Method Not Allowed",
     "short-description": "The request method is known by the server but is not supported by the target resource.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-405-method-not-allowed"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/405"
   },
   {
     "code": 406,
     "phrase": "Not Acceptable",
     "short-description": "The server cannot produce a response matching the list of acceptable values.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-406-not-acceptable"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/406 "
   },
   {
     "code": 407,
     "phrase": "Proxy Authentication Required",
     "short-description": "The client must first authenticate itself with the proxy.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-407-proxy-authentication-re"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/407"
   },
   {
     "code": 408,
     "phrase": "Request Timeout",
     "short-description": "The server would like to shut down this unused connection.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-408-request-timeout"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/408"
   },
   {
     "code": 409,
     "phrase": "Conflict",
     "short-description": "The request conflicts with the current state of the server.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-409-conflict"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/409"
   },
   {
     "code": 410,
     "phrase": "Gone",
     "short-description": "The content has been permanently deleted from server.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-410-gone"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/410 "
   },
   {
     "code": 411,
     "phrase": "Length Required",
     "short-description": "The server refuses to accept the request without a defined Content-Length.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-411-length-required"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/411"
   },
   {
     "code": 412,
     "phrase": "Precondition Failed",
     "short-description": "Access condition failed.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc9110.html#name-412-precondition-failed"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/412 "
   },
   {
     "code": 413,
     "phrase": "Payload Too Large",
     "short-description": "Request entity is larger than limits defined by server.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-413-content-too-large"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/413"
   },
+  
   {
     "code": 414,
     "phrase": "URI Too Long",
     "short-description": "The URI requested by the client is longer than the server is willing to interpret.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-414-uri-too-long"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/414 "
   },
   {
     "code": 415,
     "phrase": "Unsupported Media Type",
     "short-description": "The media format of the requested data is not supported by the server.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-415-unsupported-media-type"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/415 "
   },
   {
     "code": 416,
     "phrase": "Range Not Satisfiable",
     "short-description": "The range specified by the Range header field in the request can't be fulfilled.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-416-range-not-satisfiable"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/416"
   },
+  
   {
     "code": 417,
     "phrase": "Expectation Failed",
     "short-description": "Expectation indicated by the Expect request-header field cannot be met.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-417-expectation-failed"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/417 "
   },
   {
     "code": 418,
     "phrase": "I'm a teapot",
     "short-description": "Any attempt to brew coffee with a teapot should result in this error.",
     "long-description":"",
-     "url":" https://www.rfc-editor.org/rfc/rfc2324.html#section-2.3.2"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/418"
   },
   {
     "code": 421,
     "phrase": "Misdirected Request",
     "short-description": "The request was directed at a server that is not able to produce a response.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-421-misdirected-request"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/421"
   },
   {
     "code": 422,
     "phrase": "Unprocessable Content",
     "short-description": "The request was well-formed but was unable to be followed due to semantic errors.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-422-unprocessable-content"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/422"
   },
   {
     "code": 423,
     "phrase": "Locked",
     "short-description": "The resource that is being accessed is locked.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.4"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/423"
   },
   {
     "code": 424,
     "phrase": "Failed Dependency",
     "short-description": "The request failed due to failure of a previous request.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.5"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/424"
   },
   {
     "code": 425,
     "phrase": "Too Early",
     "short-description": "Indicates that the server is unwilling to risk processing a request that might be replayed.",
     "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-425-too-early"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/425"
   },
   {
     "code": 426,
     "phrase": "Upgrade Required",
     "short-description": "The client should switch to a different protocol.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-426-upgrade-required"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/426"
   },
   {
     "code": 428,
     "phrase": "Precondition Required",
     "short-description": "The origin server requires the request to be conditional.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-3"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/428"
   },
   {
     "code": 429,
     "phrase": "Too Many Requests",
     "short-description": "The user has sent too many requests in a given amount of time.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-4"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/429"
   },
   {
     "code": 431,
     "phrase": "Request Header Fields Too Large",
     "short-description": "The server is unwilling to process the request because its header fields are too large.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-5"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/431"
   },
   {
     "code": 451,
     "phrase": "Unavailable For Legal Reasons",
     "short-description": "The user-agent requested a resource that cannot legally be provided.",
     "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-451-unavailable-for-legal-reasons"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/451"
   },
   {
     "code": 500,
     "phrase": "Internal Server Error",
     "short-description": "The server has encountered a situation it doesn't know how to handle.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-500-internal-server-error"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/500"
   },
   {
     "code": 501,
     "phrase": "Not Implemented",
     "short-description": "The request method is not supported by the server and cannot be handled.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-501-not-implemented"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/501"
   },
   {
     "code": 502,
     "phrase": "Bad Gateway",
     "short-description": "The server, while acting as a gateway, got an invalid response.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-502-bad-gateway"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/502 "
   },
   {
     "code": 503,
     "phrase": "Service Unavailable",
     "short-description": "The server is not ready to handle the request.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-503-service-unavailable"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/503"
   },
   {
     "code": 504,
     "phrase": "Gateway Timeout",
     "short-description": "The server is acting as a gateway and cannot get a response in time.",
     "long-description":"",
-     "url":"https://www.ietf.org/rfc/rfc9110.html#name-504-gateway-timeout"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/504"
   },
   {
     "code": 505,
     "phrase": "HTTP Version Not Supported",
     "short-description": "The HTTP version used in the request is not supported by the server.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2068#section-10.5.6"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/505"
   },
   {
     "code": 506,
     "phrase": "Variant Also Negotiates",
     "short-description": "Transparent content negotiation for the request results in a circular reference.",
      "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-506-variant-also-negotiates"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/506"
   },
   {
     "code": 507,
     "phrase": "Insufficient Storage",
     "short-description": "The server is unable to store the representation needed to complete the request.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc2518#section-10.6"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/507"
   },
   {
     "code": 508,
     "phrase": "Loop Detected",
     "short-description": "The server detected an infinite loop while processing a request.",
     "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-508-loop-detected"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/508"
   },
   {
     "code": 510,
     "phrase": "Not Extended",
     "short-description": "Further extensions to the request are required for the server to fulfill it.",
     "long-description":"",
-    //  "url":"https://www.rfc-editor.org/rfc/rfc9110.html#name-509-not-extended"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/510"
   },
   {
     "code": 511,
     "phrase": "Network Authentication Required",
     "short-description": "The client needs to authenticate to gain network access.",
     "long-description":"",
-     "url":"https://www.rfc-editor.org/rfc/rfc6585.html#section-6"
+     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/511"
   }
 ]

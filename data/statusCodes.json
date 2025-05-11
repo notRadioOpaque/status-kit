@@ -31,8 +31,8 @@
     "code": 200,
     "phrase": "OK",
     "short-description": "The request succeeded.",
-    "long-description":"",
-     "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/200"
+    "long-description": "The request succeeded. The result and meaning of 'success' depends on the HTTP method: GET: The resource has been fetched and transmitted in the message body. HEAD: Representation headers are included in the response without any message body. PUT or POST: The resource describing the result of the action is transmitted in the message body. TRACE: The message body contains the request as received by the server.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/200"
   },
   {
     "code": 201,

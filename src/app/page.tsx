@@ -1,17 +1,12 @@
 import {Icon} from "@iconify/react";
 
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-// import FAQS from "@/components/faqs";
-import {Tag} from "@/components/tag";
 import CommandGuide from "@/components/command-guide";
 import SearchBar from "@/components/search-bar";
+import {Tag} from "@/components/tag";
 
 export default function Home() {
   return (
-    <div className="bg-noise relative grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 bg-white p-8 pb-20 text-[#171717] transition sm:p-10 dark:bg-[#171717] dark:text-white">
-      <Header />
-
+    <div>
       <main className="row-start-2 flex h-max w-full max-w-7xl flex-col items-center justify-center gap-[32px] text-center">
         <Tag
           icon={
@@ -46,9 +41,6 @@ export default function Home() {
 
         <CommandGuide />
       </main>
-
-      {/* <FAQS /> */}
-      <Footer />
     </div>
   );
 }

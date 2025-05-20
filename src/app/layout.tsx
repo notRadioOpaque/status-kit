@@ -4,6 +4,8 @@ import {Abel} from "next/font/google";
 
 import {Providers} from "@/lib/providers";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const abel = Abel({
   weight: "400",
@@ -26,7 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${abel.className}`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="bg-noise relative grid min-h-screen grid-rows-[20px_1fr_20px] gap-16 bg-white p-8 pb-20 text-[#171717] transition sm:p-10 dark:bg-[#171717] dark:text-white">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );

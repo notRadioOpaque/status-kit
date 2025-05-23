@@ -113,7 +113,7 @@ const Table = <T,>({
   return (
     <div className="hidden w-full lg:block">
       <div
-        className={`${tableClassName} border-gray-accent-300 dark:border-dark-stroke relative !z-[30] w-full !rounded-t-[4px] border`}
+        className={`${tableClassName} border-gray-accent-300 dark:border-dark-stroke relative !z-[30] w-full !rounded-t-[4px]`}
       >
         <table className="w-full">
           <thead>
@@ -122,7 +122,7 @@ const Table = <T,>({
                 <th
                   key={String(index + 1)}
                   className={classNames(
-                    `text-12 border px-[0.813rem] py-[14px] align-middle font-semibold whitespace-nowrap first:rounded-tl-[4px] last:rounded-tr-[4px] ${thClassName}`,
+                    `text-12 border border-zinc-500 px-[0.813rem] py-[14px] align-middle font-semibold whitespace-nowrap first:rounded-tl-[4px] last:rounded-tr-[4px] ${thClassName}`,
                   )}
                 >
                   {column.header}
@@ -150,7 +150,7 @@ const Table = <T,>({
                   <tr
                     key={String(rowIndex + 1)}
                     className={classNames(`transition-all duration-300 ${trClassName}`, {
-                      "dark:hover:bg-dark-tag cursor-pointer hover:bg-[#f1f1f1]": onRowClick,
+                      "cursor-pointer bg-transparent hover:bg-zinc-400/20": onRowClick,
                       "": JSON.stringify(item) === JSON.stringify(selectedRow),
                     })}
                     onClick={() => {
@@ -164,7 +164,7 @@ const Table = <T,>({
                       <td
                         key={String(columnIndex + 1)}
                         className={classNames(
-                          `border px-[0.813rem] align-middle text-[14px] font-semibold whitespace-nowrap capitalize ${tdClassName} ${cellClassName}`,
+                          `border border-zinc-500 px-[0.813rem] align-middle text-[14px] font-semibold whitespace-nowrap capitalize ${tdClassName} ${cellClassName}`,
                         )}
                       >
                         {typeof column.cell === "function" ? column.cell(item) : column.cell}

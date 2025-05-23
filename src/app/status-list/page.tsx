@@ -6,12 +6,18 @@ import Table from "@/components/table";
 import Pagination from "@/components/pagination";
 
 import statusCodes from "../../../data/statusCodes.json";
+import {useRouter} from "next/navigation";
 
 const itemsPerPageOptions = [10, 20, 30];
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
+  const router = useRouter();
+
+  function navigate(slug: number) {
+    router.push(`status/${slug}`);
+  }
 
   const columns = [
     {
@@ -62,7 +68,12 @@ const Page = () => {
   return (
     <div className="mt-10 flex flex-col gap-7">
       <h1 className="text-4xl font-extrabold">List of all status codes</h1>
-      <Table columns={columns} data={paginatedStatuses || []} tableString="List of status codes" />
+      <Table
+        onRowClick={(item) => navigate(item.code)}
+        columns={columns}
+        data={paginatedStatuses || []}
+        tableString="List of status codes"
+      />
       <div className="flex items-center justify-between">
         <div>
           showing {startIndex + 1}-{endIndex} of {statuses.length}

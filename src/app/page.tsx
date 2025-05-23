@@ -7,7 +7,7 @@ import {Tag} from "@/components/tag";
 export default function Home() {
   return (
     <div>
-      <main className="row-start-2 flex h-max w-full max-w-7xl flex-col items-center justify-center gap-[32px] text-center">
+      <main className="max-w-8xl row-start-2 flex h-max w-full flex-col items-center justify-center gap-[32px] pt-10 text-center">
         <Tag
           icon={
             <Icon

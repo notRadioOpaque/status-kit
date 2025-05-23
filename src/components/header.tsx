@@ -3,7 +3,7 @@ import ThemeToggle from "./theme-toggle";
 
 const Header = () => {
   return (
-    <header className="flex w-full max-w-7xl items-center justify-between">
+    <header className="max-w-8xl mx-auto flex w-full items-center justify-between">
       <Logo />
 
       <ThemeToggle />

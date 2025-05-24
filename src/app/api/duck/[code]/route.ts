@@ -1,7 +1,8 @@
 import {NextResponse} from "next/server";
 
 export async function GET(request: Request, {params}: {params: {code: string}}) {
-  const {code} = params;
+  const url = new URL(request.url);
+  const code = url.pathname.split("/").pop();
 
   try {
     const res = await fetch(`https://httpducks.com/${code}.json`);

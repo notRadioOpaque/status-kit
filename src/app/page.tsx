@@ -3,6 +3,7 @@ import {Icon} from "@iconify/react";
 import CommandGuide from "@/components/command-guide";
 import SearchBar from "@/components/search-bar";
 import {Tag} from "@/components/tag";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,6 +40,9 @@ export default function Home() {
           <SearchBar />
         </div>
 
+        <Link href={"status-list"} className="underline hover:text-blue-400 hover:no-underline">
+          See full list of codes&nbsp;&nbsp;👀
+        </Link>
         <CommandGuide />
       </main>
     </div>

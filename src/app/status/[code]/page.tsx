@@ -11,6 +11,8 @@ const page = () => {
   const {code} = useParams();
   const [imageParams, setImageParams] = useState<{webp: string} | null>(null);
   const [isError, setIsError] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   const router = useRouter();
 
   useEffect(() => {
@@ -43,7 +45,10 @@ const page = () => {
 
   return (
     <>
-      <button className="flex cursor-pointer items-center gap-4 text-xl" onClick={goback}>
+      <button
+        className="flex cursor-pointer items-center gap-4 text-xl hover:text-blue-400"
+        onClick={goback}
+      >
         <Icon icon="tabler:arrow-bar-left" height={"24"} width={"24"} />
         Go back
       </button>
@@ -73,13 +78,14 @@ const page = () => {
             <div className="flex h-[500px] w-full items-center justify-center rounded-lg border border-dashed border-r-zinc-400 text-4xl">
               Oops! Error fetching 🦆❌ ...
             </div>
-          ) : imageParams ? (
+          ) : imageParams || isImageLoaded ? (
             <Image
-              src={imageParams.webp || ""}
+              src={imageParams?.webp || ""}
               alt={`Duck ${code}`}
               className="block h-full w-full overflow-hidden rounded-lg object-contain"
               width={300}
               height={400}
+              onLoad={() => setIsImageLoaded(true)}
               priority
             />
           ) : (

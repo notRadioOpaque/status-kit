@@ -7,6 +7,7 @@ import Pagination from "@/components/pagination";
 
 import statusCodes from "../../../data/statusCodes.json";
 import {useRouter} from "next/navigation";
+import {Icon} from "@iconify/react";
 
 const itemsPerPageOptions = [10, 20, 30];
 
@@ -61,12 +62,23 @@ const Page = () => {
     };
   });
 
+  const goback = () => {
+    router.back();
+  };
+
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const paginatedStatuses = statuses.slice(startIndex, endIndex);
 
   return (
-    <div className="mt-10 flex flex-col gap-7">
+    <div className="mt-6 flex flex-col gap-7">
+      <button
+        className="flex cursor-pointer items-center gap-4 text-xl hover:text-blue-400"
+        onClick={goback}
+      >
+        <Icon icon="tabler:arrow-bar-left" height={"24"} width={"24"} />
+        Go back
+      </button>
       <h1 className="text-4xl font-extrabold">List of all status codes</h1>
       <Table
         onRowClick={(item) => navigate(item.code)}

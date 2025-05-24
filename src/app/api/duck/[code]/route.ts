@@ -1,6 +1,6 @@
 import {NextResponse} from "next/server";
 
-export async function GET(request: Request, {params}: {params: {code: string}}) {
+export async function GET(request: Request) {
   const url = new URL(request.url);
   const code = url.pathname.split("/").pop();
 

@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import {Icon} from "@iconify/react";
 import Fuse from "fuse.js";
+import {useRouter} from "next/navigation";
 
 import statusCodes from "../../data/statusCodes.json";
 
@@ -11,7 +12,6 @@ import EmptySearch from "./empty-search";
 import ResultPanel from "./result-panel";
 import InitialSearch from "./initial-search";
 import SearchInput from "./search-input";
-import {useRouter} from "next/navigation";
 // import LoadingSearch from "./loading-search";
 
 const SearchBar = () => {

@@ -1,13 +1,13 @@
 "use client";
 
 import {useState} from "react";
+import {useRouter} from "next/navigation";
+import {Icon} from "@iconify/react";
 
 import Table from "@/components/table";
 import Pagination from "@/components/pagination";
 
 import statusCodes from "../../../data/statusCodes.json";
-import {useRouter} from "next/navigation";
-import {Icon} from "@iconify/react";
 
 const itemsPerPageOptions = [10, 20, 30];
 
@@ -76,15 +76,15 @@ const Page = () => {
         className="flex cursor-pointer items-center gap-4 text-xl hover:text-blue-400"
         onClick={goback}
       >
-        <Icon icon="tabler:arrow-bar-left" height={"24"} width={"24"} />
+        <Icon height={"24"} icon="tabler:arrow-bar-left" width={"24"} />
         Go back
       </button>
       <h1 className="text-4xl font-extrabold">List of all status codes</h1>
       <Table
-        onRowClick={(item) => navigate(item.code)}
         columns={columns}
         data={paginatedStatuses || []}
         tableString="List of status codes"
+        onRowClick={(item) => navigate(item.code)}
       />
       <div className="flex items-center justify-between">
         <div>

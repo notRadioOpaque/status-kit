@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import {useParams, useRouter} from "next/navigation";
-import statusCodes from "../../../../data/statusCodes.json";
 import Link from "next/link";
 import {Icon} from "@iconify/react";
 import {useEffect, useState} from "react";
 
-const page = () => {
+import statusCodes from "../../../../data/statusCodes.json";
+
+const Page = () => {
   const {code} = useParams();
   const [imageParams, setImageParams] = useState<{webp: string} | null>(null);
   const [isError, setIsError] = useState(false);
@@ -22,14 +23,17 @@ const page = () => {
 
         if (!res.ok) {
           const errorData = await res.json();
-          console.error("Server responded with error:", errorData.error);
+
           setIsError(true); // Optional: trigger fallback on the frontend
-          return;
+
+          throw new Error(errorData);
         }
 
         const data = await res.json();
+
         setImageParams(data.image);
       } catch (err) {
+        // eslint-disable-next-line no-console
         console.error("error fetching duck:", err);
       }
     };
@@ -49,7 +53,7 @@ const page = () => {
         className="flex cursor-pointer items-center gap-4 text-xl hover:text-blue-400"
         onClick={goback}
       >
-        <Icon icon="tabler:arrow-bar-left" height={"24"} width={"24"} />
+        <Icon height={"24"} icon="tabler:arrow-bar-left" width={"24"} />
         Go back
       </button>
 
@@ -70,7 +74,7 @@ const page = () => {
             className="mt-6 flex items-center gap-1 hover:underline"
             href={selectedStatus?.url ?? ""}
           >
-            Learn more <Icon icon={"ion:arrow-up-right-box-outline"} height="16" width="16" />
+            Learn more <Icon height="16" icon={"ion:arrow-up-right-box-outline"} width="16" />
           </Link>
         </div>
         <div className="flex h-full w-1/2 items-center justify-center">
@@ -80,13 +84,13 @@ const page = () => {
             </div>
           ) : imageParams || isImageLoaded ? (
             <Image
-              src={imageParams?.webp || ""}
+              priority
               alt={`Duck ${code}`}
               className="block h-full w-full overflow-hidden rounded-lg object-contain"
-              width={300}
               height={400}
+              src={imageParams?.webp || ""}
+              width={300}
               onLoad={() => setIsImageLoaded(true)}
-              priority
             />
           ) : (
             <div className="flex h-[500px] w-full items-center justify-center rounded-lg border border-dashed border-r-zinc-400 text-4xl">
@@ -99,4 +103,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

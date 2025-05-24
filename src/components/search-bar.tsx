@@ -11,6 +11,7 @@ import EmptySearch from "./empty-search";
 import ResultPanel from "./result-panel";
 import InitialSearch from "./initial-search";
 import SearchInput from "./search-input";
+import {useRouter} from "next/navigation";
 // import LoadingSearch from "./loading-search";
 
 const SearchBar = () => {
@@ -18,6 +19,7 @@ const SearchBar = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [searchInput, setSearchInput] = useState("");
   const [results, setResults] = useState<any[]>([]);
+  const router = useRouter();
 
   const fuse = new Fuse(statusCodes, {
     keys: ["code", "phrase"],
@@ -63,8 +65,7 @@ const SearchBar = () => {
       } else if (e.key === "Enter") {
         e.preventDefault();
         if (results[selectedIndex]) {
-          // Do something with results[selectedIndex]
-          console.log("Selected:", results[selectedIndex]);
+          router.push(`status/${results[selectedIndex].code}`);
         }
       }
     };

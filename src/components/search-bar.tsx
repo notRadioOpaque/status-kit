@@ -87,7 +87,7 @@ const SearchBar = () => {
         className="w-full cursor-pointer"
         onClick={() => setActive(true)}
       >
-        <div className="flex items-center rounded-2xl border border-gray-300 bg-white p-4 shadow-lg dark:border-[#464646] dark:bg-[#262628]">
+        <div className="flex items-center rounded-2xl border border-gray-300 bg-white p-3 shadow-lg md:p-4 dark:border-[#464646] dark:bg-[#262628]">
           <Icon
             className="text-[#7d7d7d] dark:text-white"
             height="32"
@@ -95,10 +95,10 @@ const SearchBar = () => {
             width="32"
           />
           <input
-            className="mx-4 w-full border-l border-l-[#7d7d7d] bg-transparent pl-4 text-2xl outline-0 dark:border-l-[#464646]"
+            className="mx-4 w-full border-l border-l-[#7d7d7d] bg-transparent pl-4 text-lg outline-0 md:text-2xl dark:border-l-[#464646]"
             placeholder="Search HTTP codes..."
           />
-          <div className="ml-auto flex w-max items-center gap-0.5 rounded-lg bg-[#7d7d7d] px-2.5 py-1.5 font-bold text-white dark:bg-[#464646]">
+          <div className="ml-auto hidden w-max items-center gap-0.5 rounded-lg bg-[#7d7d7d] px-2.5 py-1.5 font-bold text-white md:flex dark:bg-[#464646]">
             <span>⌘</span>
             <span>K</span>
           </div>
@@ -121,7 +121,7 @@ const SearchBar = () => {
             {/* Search Popup */}
             <motion.div
               animate={{y: 0, opacity: 1}}
-              className="fixed top-[20%] left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 rounded-xl bg-transparent"
+              className="fixed top-1/2 left-1/2 z-50 w-[90%] max-w-2xl -translate-x-1/2 translate-y-[-50%] rounded-xl bg-transparent"
               exit={{y: 50, opacity: 0}}
               initial={{y: 50, opacity: 0}}
             >

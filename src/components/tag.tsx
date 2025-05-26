@@ -22,8 +22,8 @@ const Tag = React.forwardRef<HTMLDivElement, TagProps>(
         }}
         {...props}
       >
-        <span className="flex h-6 w-6 items-center justify-center">{icon}</span>
-        <span className="text-10 text-sm font-bold">{text}</span>
+        <span className="flex h-4 w-4 items-center justify-center md:h-6 md:w-6">{icon}</span>
+        <span className="text-[12px] font-bold md:text-sm">{text}</span>
       </div>
     );
   },

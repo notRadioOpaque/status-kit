@@ -4,9 +4,9 @@ import {Icon} from "@iconify/react";
 const Logo = () => {
   return (
     <Link className="flex items-center gap-3" href={"/"}>
-      <Icon height="48" icon="material-icon-theme:folder-tools-open" width="48" />
+      <Icon height="40" icon="material-icon-theme:folder-tools-open" width="40" />
 
-      <p className="text-3xl font-bold">Status Kit</p>
+      <p className="text-xl font-bold md:text-3xl">Status Kit</p>
     </Link>
   );
 };

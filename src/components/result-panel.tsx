@@ -26,7 +26,7 @@ const ResultPanel = ({
 
   return (
     <div className="mt-6 flex flex-col gap-4 rounded-2xl bg-white pt-4 outline-none dark:bg-[#262628]">
-      <div className="mx-6 my-4 max-h-[400px] overflow-y-auto">
+      <div className="mx-4 my-1 max-h-[400px] overflow-y-auto md:mx-6 md:my-4">
         <div className="flex flex-col gap-4">
           {results.map((result, index) => (
             <button
@@ -34,7 +34,7 @@ const ResultPanel = ({
               ref={(el) => {
                 itemRefs.current[index] = el;
               }}
-              className={`flex cursor-pointer items-center gap-3 rounded-lg border-2 p-4 transition-all ease-in-out ${
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border-2 p-3 transition-all ease-in-out md:p-4 ${
                 index === selectedIndex
                   ? "border-zinc-400 bg-zinc-300 dark:border-[#7a7a7a] dark:bg-[#3f3f41]"
                   : "border-transparent bg-zinc-200 hover:border-zinc-400 dark:bg-[#333337] dark:hover:border-[#464646]"

@@ -7,7 +7,7 @@ const InitialSearch = () => {
         <div className="mb-8 flex justify-center">
           <Icon className="text-gray-500" height={48} icon="iconamoon:search-light" width={48} />
         </div>
-        <p className="text-2xl font-medium">Start typing to explore HTTP status codes</p>
+        <p className="text-xl font-medium md:text-2xl">Start typing to explore HTTP status codes</p>
         <p className="mt-2 text-gray-400">
           Try things like <span className="text-[#1e88e5]">404</span>,{" "}
           <span className="text-[#1e88e5]">Redirect</span>, or{" "}

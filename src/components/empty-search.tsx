@@ -12,7 +12,7 @@ const EmptySearch = ({
       <Icon height={24} icon="iconamoon:search-light" />
 
       <h4 className="text-xl font-bold">No results found</h4>
-      <p className="mt-[-5px] w-[40%]">
+      <p className="mt-[-5px] w-[85%] md:w-[40%]">
         <span className="font-bold text-[#1e88e5]">&quot;{searchInput}&quot;</span> did not match
         any projects or commands. Please try again.
       </p>

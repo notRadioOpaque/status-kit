@@ -14,11 +14,11 @@ function SearchInput({searchInput, action}: Props) {
   }, []);
 
   return (
-    <div className="flex items-center gap-3 rounded-2xl bg-white p-6 text-2xl dark:bg-[#262628] dark:text-white">
+    <div className="flex items-center gap-3 rounded-2xl bg-white p-3.5 text-2xl md:p-6 dark:bg-[#262628] dark:text-white">
       <Icon height={24} icon="iconamoon:search-light" />
       <input
         ref={inputRef}
-        className="w-full bg-transparent text-lg outline-none"
+        className="w-full bg-transparent text-base outline-none md:text-lg"
         placeholder="Type a status code..."
         type="text"
         value={searchInput}

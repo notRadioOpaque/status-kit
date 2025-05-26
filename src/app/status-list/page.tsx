@@ -71,7 +71,7 @@ const Page = () => {
   const paginatedStatuses = statuses.slice(startIndex, endIndex);
 
   return (
-    <div className="mt-6 flex flex-col gap-7">
+    <div className="mt-6 flex w-full flex-col gap-7">
       <button
         className="flex cursor-pointer items-center gap-4 text-xl hover:text-blue-400"
         onClick={goback}
@@ -79,22 +79,24 @@ const Page = () => {
         <Icon height={"24"} icon="tabler:arrow-bar-left" width={"24"} />
         Go back
       </button>
-      <h1 className="text-4xl font-extrabold">List of all status codes</h1>
+      <h1 className="text-2xl font-extrabold md:text-4xl">List of all status codes</h1>
+
       <Table
         columns={columns}
         data={paginatedStatuses || []}
         tableString="List of status codes"
         onRowClick={(item) => navigate(item.code)}
       />
-      <div className="flex items-center justify-between">
+
+      <div className="flex flex-col items-center justify-between md:flex-row">
         <div>
           showing {startIndex + 1}-{endIndex} of {statuses.length}
         </div>
 
         {statuses.length > 0 && (
-          <div className="flex items-center justify-end gap-10">
-            <div className="flex items-center gap-2">
-              <p>Items per page</p>
+          <div className="mt-3 flex w-full flex-col items-center justify-end gap-4 md:mt-0 md:w-max md:flex-row md:gap-10">
+            <div className="flex w-max items-center gap-2">
+              <p className="w-max">Items per page</p>
 
               <select
                 className="rounded-sm border px-2 py-1"

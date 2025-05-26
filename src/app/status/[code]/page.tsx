@@ -57,8 +57,8 @@ const Page = () => {
         Go back
       </button>
 
-      <div className="mt-8 flex gap-6">
-        <div className="flex w-1/2 flex-col gap-3">
+      <div className="mt-8 flex flex-col gap-6 md:flex-row">
+        <div className="order-2 flex w-full flex-col gap-3 md:order-1 md:w-1/2">
           <h2 className="text-6xl font-bold text-blue-400">{selectedStatus?.code}</h2>
           <div className="my-6 w-max rounded-full bg-blue-400/50 px-4 py-1">
             {selectedStatus?.phrase}
@@ -66,10 +66,10 @@ const Page = () => {
           <div className="text-lg font-bold text-blue-400">
             Category: <span>{selectedStatus?.category}</span>
           </div>
-          <p className="w-full text-xl text-zinc-400 sm:w-[80%]">
+          <p className="w-full text-lg text-zinc-400 sm:w-[80%] md:text-xl">
             {selectedStatus?.shortDescription}
           </p>
-          <p className="w-full text-xl sm:w-[80%]">{selectedStatus?.LongDescription}</p>
+          <p className="w-full text-lg sm:w-[80%] md:text-xl">{selectedStatus?.LongDescription}</p>
           <Link
             className="mt-6 flex items-center gap-1 hover:underline"
             href={selectedStatus?.url ?? ""}
@@ -77,9 +77,9 @@ const Page = () => {
             Learn more <Icon height="16" icon={"ion:arrow-up-right-box-outline"} width="16" />
           </Link>
         </div>
-        <div className="flex h-full w-1/2 items-center justify-center">
+        <div className="order-1 flex h-full w-full items-center justify-center md:w-1/2">
           {isError ? (
-            <div className="flex h-[500px] w-full items-center justify-center rounded-lg border border-dashed border-r-zinc-400 text-4xl">
+            <div className="flex h-[300px] w-full items-center justify-center rounded-lg border border-dashed border-r-zinc-400 text-4xl md:h-[500px]">
               Oops! Error fetching 🦆❌ ...
             </div>
           ) : imageParams || isImageLoaded ? (
@@ -93,7 +93,7 @@ const Page = () => {
               onLoad={() => setIsImageLoaded(true)}
             />
           ) : (
-            <div className="flex h-[500px] w-full items-center justify-center rounded-lg border border-dashed border-r-zinc-400 text-4xl">
+            <div className="flex h-[300px] w-full items-center justify-center rounded-lg border border-dashed border-r-zinc-400 text-4xl md:h-[500px]">
               🦆🦆🦆...
             </div>
           )}

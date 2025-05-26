@@ -56,7 +56,7 @@ const Table = <T,>({
   if (!isLoading && !data?.length) {
     return (
       <div
-        className={`dark:border-dark-stroke relative hidden h-[368px] flex-col items-center justify-center gap-3 rounded-xl pt-[2rem] lg:flex ${tableClassName}`}
+        className={`dark:border-dark-stroke relative flex h-[368px] flex-col items-center justify-center gap-3 rounded-xl pt-[2rem] ${tableClassName}`}
       >
         {loading ? (
           <div className="absolute top-[50%] left-[50%] grid h-[200px] w-[200px] translate-x-[-50%] translate-y-[-50%] place-items-center">
@@ -111,9 +111,9 @@ const Table = <T,>({
   }
 
   return (
-    <div className="hidden w-full lg:block">
+    <div className="block w-full">
       <div
-        className={`${tableClassName} border-gray-accent-300 dark:border-dark-stroke relative !z-[30] w-full !rounded-t-[4px]`}
+        className={`${tableClassName} border-gray-accent-300 dark:border-dark-stroke relative !z-[30] w-full overflow-x-scroll !rounded-t-[4px]`}
       >
         <table className="w-full">
           <thead>

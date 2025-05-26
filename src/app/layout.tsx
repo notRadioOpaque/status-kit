@@ -31,7 +31,7 @@ export default function RootLayout({
         <Providers>
           <div className="bg-noise relative mx-auto grid min-h-screen w-full grid-rows-[20px_1fr_20px] gap-16 bg-white p-8 pb-20 text-[#171717] transition sm:p-10 dark:bg-[#171717] dark:text-white">
             <Header />
-            <div className="mx-auto w-full max-w-7xl">{children}</div>
+            <div className="mx-auto w-full max-w-7xl overflow-hidden">{children}</div>
             <Footer />
           </div>
         </Providers>

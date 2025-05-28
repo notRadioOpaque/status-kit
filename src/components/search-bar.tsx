@@ -132,7 +132,11 @@ const SearchBar = () => {
               ) : // ) : loading ? (
               //   <LoadingSearch />
               results && results.length > 0 ? (
-                <ResultPanel results={results} selectedIndex={selectedIndex} onSelect={() => {}} />
+                <ResultPanel
+                  results={results}
+                  selectedIndex={selectedIndex}
+                  onSelect={() => router.push(`status/${results[selectedIndex].code}`)}
+                />
               ) : (
                 <EmptySearch
                   searchInput={searchInput}

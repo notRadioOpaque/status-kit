@@ -3,8 +3,9 @@
 import * as React from "react";
 import {ReactNode} from "react";
 import {useState} from "react";
-import classNames from "classnames";
 import {useRouter} from "next/navigation";
+
+import {cn} from "@/lib/utils";
 
 export interface TableColumn<T> {
   header: string | React.JSX.Element;
@@ -121,7 +122,7 @@ const Table = <T,>({
               {columns.map((column, index) => (
                 <th
                   key={String(index + 1)}
-                  className={classNames(
+                  className={cn(
                     `text-12 border border-zinc-500 px-[0.813rem] py-[14px] align-middle font-semibold whitespace-nowrap first:rounded-tl-[4px] last:rounded-tr-[4px] ${thClassName}`,
                   )}
                 >
@@ -149,7 +150,7 @@ const Table = <T,>({
               : data?.map((item, rowIndex) => (
                   <tr
                     key={String(rowIndex + 1)}
-                    className={classNames(`transition-all duration-300 ${trClassName}`, {
+                    className={cn(`transition-all duration-300 ${trClassName}`, {
                       "cursor-pointer bg-transparent hover:bg-zinc-400/20": onRowClick,
                       "": JSON.stringify(item) === JSON.stringify(selectedRow),
                     })}
@@ -163,7 +164,7 @@ const Table = <T,>({
                     {columns.map((column, columnIndex) => (
                       <td
                         key={String(columnIndex + 1)}
-                        className={classNames(
+                        className={cn(
                           `border border-zinc-500 px-[0.813rem] align-middle text-[14px] font-semibold whitespace-nowrap capitalize ${tdClassName} ${cellClassName}`,
                         )}
                       >

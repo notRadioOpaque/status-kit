@@ -13,7 +13,7 @@ export default function Footer() {
       by
       <a
         className="flex items-center gap-2 font-bold text-[#1e88e5] hover:underline hover:underline-offset-4"
-        href="https://github.com/notRadioOpaque"
+        href="https://github.com/0x1sma1l"
         rel="noopener noreferrer"
         target="_blank"
       >
